@@ -10,4 +10,3 @@ for v in lista:
     for palavra in v:
         if palavra.lower() in 'aeiou':
             print(palavra, end=' ')
-
