@@ -6,7 +6,7 @@ cont = maipes = menspes = 0
 
 while True:
     nome = input('digite seu nome: ')
-    peso = int(input('digite seu peso: '))
+    peso = float(input('digite seu peso: '))
     listtemp.append(nome)
     listtemp.append(peso)
     lista.append(listtemp[:])
