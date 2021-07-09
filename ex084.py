@@ -1,3 +1,6 @@
+print(20*'=')
+print('MAIOR E MENOR PESO')
+print(20*'=')
 lista = []
 listtemp = []
 pespesada = []
@@ -37,7 +40,7 @@ while True:
     opc = input('deseja continhar ? [S/N] ')
     if opc[0] in 'Nn':
         break
-
+print(15 * '-=')
 print(f'foram cadastradas {cont} pessoas.')
 print(f'o maior peso foi de {maipes}kg que pertence a {pespesada}')
 print(f'o menor peso foi de {menspes}kg que pertence a {pesleve}')
