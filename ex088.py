@@ -18,6 +18,6 @@ for c in range(0, x):
     temp.clear()
 print(30*'=')
 for pal in palpite:
-    print(pal)
+    print(sorted(pal) )
     sleep(1)
 print(30*'=')
