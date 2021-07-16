@@ -1,0 +1,20 @@
+print(f'{25*"="}\n{"APROVEITAMENDO DE JOGO"}\n{25*"="}')
+dados = dict()
+gols = list()
+dados['nome'] = input('Nome: ')
+partidas = int(input('Numero de partidas:  '))
+for c in range(0, partidas):
+    gols.append(int(input(f'  - Numero de gols na partida {c}: ')))
+dados['gols'] = gols.copy()
+dados['total de gols'] = sum(gols)
+print(30*'-=')
+print(dados)
+print(30*'-=')
+for k, v in dados.items():
+    print(f'- O campo {k} tem valor {v}')
+print(30*'-=')
+print(f'O jogador {dados["nome"]} jogou {partidas} partidas.')
+for j in range(0, partidas):
+    print(f'   => Na partida {j}, fez {gols[j]} gols')
+print(f'Com um total de {sum(gols)} gols')
+print(30*'-=')
