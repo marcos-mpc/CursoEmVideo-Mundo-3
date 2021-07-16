@@ -1,3 +1,4 @@
+print(f'{20*"*"}\n{"ANO DE APOSENTADORIA"}\n{20*"*"}')
 from datetime import date
 pessoa = dict()
 pessoa['nome'] = input('Nome: ')
