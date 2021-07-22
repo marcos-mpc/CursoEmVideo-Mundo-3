@@ -1,6 +1,6 @@
 from random import randint
 from time import sleep
-
+print(f'{20*"="}\n{"ANALISANDO VALORES"}\n{20*"="}')
 
 def maior (*num):
     print(30*'-=')
