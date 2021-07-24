@@ -1,4 +1,5 @@
 from datetime import date
+print(f'{20*"-"}\n{"VOTAÇÃO":^20}\n{20*"-"}')
 
 
 def voto(ano):
