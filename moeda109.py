@@ -18,17 +18,13 @@ def diminuir(n=0, p=0, f=False):
         return res
 
 
+# Resultado Curso
+
 def dobro(n=0, f=False):
     res = n * 2
-    if f is True:
-        return formatacao(int(res))
-    else:
-        return res
+    return res if f is False else formatacao(res)
 
 
 def metade(n=0, f=False):
     res = n / 2
-    if f is True:
-        return formatacao(int(res))
-    else:
-        return res
+    return res if not f else formatacao(res)
