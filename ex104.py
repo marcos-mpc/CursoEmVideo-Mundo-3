@@ -1,14 +1,13 @@
 def leiaint(txt):
     num = 0
     while True:
-        n = str(input(txt))
-        if n.isnumeric():
-            num = int(n)
+        nu = str(input(txt))
+        if nu.isnumeric():
+            num = int(nu)
             break
         else:
             print('Erro! Digite um numero!')
     return num
-
 
 
 n = leiaint('Digite um Numero: ')
