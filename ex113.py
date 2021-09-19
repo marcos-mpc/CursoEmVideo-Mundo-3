@@ -3,7 +3,7 @@ def leiaint(msg):
         try:
             n = int(input(msg))
             break
-        except:
+        except(ValueError, TypeError):
             print('\033[91mErro! Digite Um Número Inteiro Nálido.\033[m')
     return f'Você Digitou O Número Inteiro {n}'
 
@@ -13,7 +13,7 @@ def leiafloat(msg):
         try:
             n = float(input(msg))
             break
-        except:
+        except():
             print('\033[91mErro! Digite Um Número Inteiro Válido.\033[m')
     return f'Você Digitou O Número Real {n}'
 
