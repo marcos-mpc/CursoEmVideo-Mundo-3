@@ -27,7 +27,7 @@ def menu():
             elif n == 1:
                 print(linha())
                 print(f'{cor(7)}{"Opção 1":^40}{cor(0)}')
-    return 'Saindo do sistema... volte sempre.'
+    return f'{linha()}\nSaindo do sistema... volte sempre.\n{linha()}'
 
 
 print(menu())
