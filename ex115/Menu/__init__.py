@@ -1,4 +1,11 @@
-from adicionais import cor, linha
+from adicionais import *
+from arquivos import *
+from time import sleep
+
+arq = 'cursoemvideo.txt'
+
+if not arquivoexiste(arq):
+    criararquivo(arq)
 
 
 def menu():
@@ -12,6 +19,7 @@ def menu():
             print(f'{cor(3)}3 -{cor(0)} {cor(4)}mSair do sistema{cor(0)}')
             print(linha())
             n = int(input(f'{cor(3)}Sua opção:{cor(0)} '))
+            sleep(1)
 
         except(TypeError, ValueError):
             print(f'{cor(1)}Erro! Digite um número inteiro válido.{cor(0)}')
@@ -25,8 +33,7 @@ def menu():
                 print(f'{cor(7)}{"Opção 2":^40}{cor(0)}')
                 print(linha())
             elif n == 1:
-                print(linha())
-                print(f'{cor(7)}{"Opção 1":^40}{cor(0)}')
+                lerarquivo(arq)
     return f'{linha()}\nSaindo do sistema... volte sempre.\n{linha()}'
 
 
