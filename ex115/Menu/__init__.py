@@ -16,7 +16,7 @@ def menu():
             print(linha())
             print(f'{cor(3)}1 -{cor(0)} {cor(4)}Ver pessoas cadastradas')
             print(f'{cor(3)}2 -{cor(0)} {cor(4)}Cadastrar nova pessoa')
-            print(f'{cor(3)}3 -{cor(0)} {cor(4)}mSair do sistema{cor(0)}')
+            print(f'{cor(3)}3 -{cor(0)} {cor(4)}Sair do sistema{cor(0)}')
             print(linha())
             n = int(input(f'{cor(3)}Sua opção:{cor(0)} '))
             sleep(1)
@@ -29,9 +29,10 @@ def menu():
             if n == 3:
                 break
             elif n == 2:
-                print(linha())
-                print(f'{cor(7)}{"Opção 2":^40}{cor(0)}')
-                print(linha())
+                print(f'{linha()}\n{"CADASTRAR NOVA PESSOA":^40}\n{linha()}')
+                nome = str(input('Nome: '))
+                idade = int(input('Idade: '))
+                cadastrar(arq, nome, idade)
             elif n == 1:
                 lerarquivo(arq)
     return f'{linha()}\nSaindo do sistema... volte sempre.\n{linha()}'
